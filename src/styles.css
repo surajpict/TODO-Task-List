@@ -1,0 +1,21 @@
+/* Import Salesforce Lightning Design System */
+/* Import Salesforce Lightning Design System */
+@import '../node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css';
+
+/* You can add global styles to this file, and also import other style files */
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .slds-card {
+    margin: 0.5rem;
+  }
+  
+  .slds-table {
+    font-size: 0.8rem;
+  }
+}
+
+/* Custom styles for our app */
+body {
+  background-color: #f3f2f2;
+}
