@@ -38,6 +38,9 @@
                 <div class="slds-truncate" title="Title">Title</div>
               </th>
               <th class="slds-text-align_left" scope="col">
+                <div class="slds-truncate" title="Due Date">Due Date</div>
+              </th>
+              <th class="slds-text-align_left" scope="col">
                 <div class="slds-truncate" title="Description">Description</div>
               </th>
               <th class="slds-text-align_center" scope="col">
@@ -56,6 +59,11 @@
               <td class="slds-text-align_left" data-label="Title">
                 <span [ngClass]="{'slds-line-through': task.completed}" class="slds-truncate">
                   {{ task.title }}
+                </span>
+              </td>
+              <td class="slds-text-align_left" data-label="Due Date">
+                <span [ngClass]="{'slds-line-through': task.completed}" class="slds-truncate">
+                  {{ task.date }}
                 </span>
               </td>
               <td class="slds-text-align_left" data-label="Description">

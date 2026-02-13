@@ -16,6 +16,21 @@
         <div class="slds-form-element__help" *ngIf="!formData.title && titleInput.touched">
           Title is required
         </div>
+
+        <label class="slds-form-element__label" for="task-date">Task Due Date</label>
+        <div class="slds-form-element__control">
+          <input type="date" 
+                 id="task-date" 
+                 class="slds-input" 
+                 [(ngModel)]="formData.date" 
+                 name="date" 
+                 placeholder="Enter task date" 
+                 required
+                 #dateInput="ngModel">
+        </div>
+        <div class="slds-form-element__help" *ngIf="!formData.date && dateInput.touched">
+            Date is required
+        </div>
       </div>
     </div>
     

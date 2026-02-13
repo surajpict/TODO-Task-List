@@ -7,8 +7,8 @@ import { Task } from '../models/task';
 })
 export class TaskService {
   private tasksSubject = new BehaviorSubject<Task[]>([
-    { id: 1, title: 'Sample Task', description: 'This is a sample task', completed: false, createdAt: new Date(), updatedAt: new Date() },
-    { id: 2, title: 'Another Task', description: 'This is another sample task', completed: true, createdAt: new Date(), updatedAt: new Date() }
+    { id: 1, title: 'Sample Task', date: new Date(), description: 'This is a sample task', completed: false, createdAt: new Date(), updatedAt: new Date() },
+    { id: 2, title: 'Another Task', date: new Date(), description: 'This is another sample task', completed: true, createdAt: new Date(), updatedAt: new Date() }
   ]);
   public tasks$ = this.tasksSubject.asObservable();
 

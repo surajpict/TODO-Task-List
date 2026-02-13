@@ -16,6 +16,7 @@ export class TaskForm {
 
   formData: Partial<Task> = {
     title: '',
+    date: new Date(),
     description: '',
     completed: false
   };
@@ -47,6 +48,7 @@ export class TaskForm {
         this.taskSubmit.emit({
           title: this.formData.title,
           description: this.formData.description,
+          date: this.formData.date || new Date(),
           completed: this.formData.completed || false
         });
       }
@@ -58,6 +60,7 @@ export class TaskForm {
   resetForm(): void {
     this.formData = {
       title: '',
+      date: new Date(),
       description: '',
       completed: false
     };
